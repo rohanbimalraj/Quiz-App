@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="QuestionCollectionViewCell" reuseIdentifier="QuestionCollectionViewCell" id="gTV-IL-0wX" customClass="QuestionCollectionViewCell" customModule="QuizApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="327" height="440"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="327" height="440"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ati-i1-qmy">
+                        <rect key="frame" x="20" y="0.0" width="287" height="420.66666666666669"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2Lg-xk-qmj">
+                                <rect key="frame" x="20" y="10.000000000000002" width="247" height="30.666666666666671"/>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="25"/>
+                                <color key="textColor" name="Wattle"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="itY-wk-O8t">
+                                <rect key="frame" x="15" y="330.66666666666669" width="257" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Option 4" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="VmO-Xs-csg">
+                                        <rect key="frame" x="10" y="5" width="237" height="60"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="20"/>
+                                        <color key="textColor" name="Atoll"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Wattle"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="VmO-Xs-csg" secondAttribute="trailing" constant="10" id="7Wz-Ad-1Wi"/>
+                                    <constraint firstAttribute="height" constant="70" id="Emc-m6-Hw3"/>
+                                    <constraint firstItem="VmO-Xs-csg" firstAttribute="leading" secondItem="itY-wk-O8t" secondAttribute="leading" constant="10" id="OfA-Vc-rSn"/>
+                                    <constraint firstItem="VmO-Xs-csg" firstAttribute="top" secondItem="itY-wk-O8t" secondAttribute="top" constant="5" id="PFT-lF-6YM"/>
+                                    <constraint firstAttribute="bottom" secondItem="VmO-Xs-csg" secondAttribute="bottom" constant="5" id="cUS-EZ-lvZ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2GB-6J-Smb">
+                                <rect key="frame" x="15" y="240.66666666666663" width="257" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Option 3" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cyv-mj-HOF">
+                                        <rect key="frame" x="10" y="5" width="237" height="60"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="20"/>
+                                        <color key="textColor" name="Atoll"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Wattle"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="cyv-mj-HOF" secondAttribute="trailing" constant="10" id="G8v-LW-rVp"/>
+                                    <constraint firstAttribute="bottom" secondItem="cyv-mj-HOF" secondAttribute="bottom" constant="5" id="ayw-MK-RAd"/>
+                                    <constraint firstAttribute="height" constant="70" id="i1I-vH-WOU"/>
+                                    <constraint firstItem="cyv-mj-HOF" firstAttribute="leading" secondItem="2GB-6J-Smb" secondAttribute="leading" constant="10" id="xug-nM-6vH"/>
+                                    <constraint firstItem="cyv-mj-HOF" firstAttribute="top" secondItem="2GB-6J-Smb" secondAttribute="top" constant="5" id="yPa-uu-04a"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mip-ZO-z7m">
+                                <rect key="frame" x="15" y="150.66666666666666" width="257" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Option 2" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dNE-6D-PK3">
+                                        <rect key="frame" x="10" y="5" width="237" height="60"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="20"/>
+                                        <color key="textColor" name="Atoll"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Wattle"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="A6S-jb-Kqg"/>
+                                    <constraint firstItem="dNE-6D-PK3" firstAttribute="top" secondItem="mip-ZO-z7m" secondAttribute="top" constant="5" id="L3N-fa-ulr"/>
+                                    <constraint firstAttribute="trailing" secondItem="dNE-6D-PK3" secondAttribute="trailing" constant="10" id="g4d-5q-9j8"/>
+                                    <constraint firstAttribute="bottom" secondItem="dNE-6D-PK3" secondAttribute="bottom" constant="5" id="qsE-OT-aXQ"/>
+                                    <constraint firstItem="dNE-6D-PK3" firstAttribute="leading" secondItem="mip-ZO-z7m" secondAttribute="leading" constant="10" id="y5y-cu-HCj"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2HS-uv-uCb">
+                                <rect key="frame" x="15" y="60.666666666666657" width="257" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Option 1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="818-dQ-MaO">
+                                        <rect key="frame" x="10" y="5.0000000000000071" width="237" height="59.999999999999993"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="20"/>
+                                        <color key="textColor" name="Atoll"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Wattle"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="818-dQ-MaO" secondAttribute="bottom" constant="5" id="6Ab-aw-n0a"/>
+                                    <constraint firstItem="818-dQ-MaO" firstAttribute="leading" secondItem="2HS-uv-uCb" secondAttribute="leading" constant="10" id="6nh-48-SVY"/>
+                                    <constraint firstAttribute="trailing" secondItem="818-dQ-MaO" secondAttribute="trailing" constant="10" id="8KI-m3-cOb"/>
+                                    <constraint firstAttribute="height" constant="70" id="iVm-Mv-seh"/>
+                                    <constraint firstItem="818-dQ-MaO" firstAttribute="top" secondItem="2HS-uv-uCb" secondAttribute="top" constant="5" id="qtB-jF-sfz"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="Atoll"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="2Lg-xk-qmj" secondAttribute="trailing" constant="20" id="09A-jS-4xJ"/>
+                            <constraint firstAttribute="bottom" secondItem="itY-wk-O8t" secondAttribute="bottom" constant="20" id="2KJ-gF-HAa"/>
+                            <constraint firstAttribute="trailing" secondItem="itY-wk-O8t" secondAttribute="trailing" constant="15" id="4Hb-fJ-ecF"/>
+                            <constraint firstItem="2HS-uv-uCb" firstAttribute="top" secondItem="2Lg-xk-qmj" secondAttribute="bottom" constant="20" id="Bph-2L-ztQ"/>
+                            <constraint firstItem="2GB-6J-Smb" firstAttribute="leading" secondItem="ati-i1-qmy" secondAttribute="leading" constant="15" id="Cnf-wp-SET"/>
+                            <constraint firstItem="itY-wk-O8t" firstAttribute="top" secondItem="2GB-6J-Smb" secondAttribute="bottom" constant="20" id="IXW-uL-22C"/>
+                            <constraint firstItem="itY-wk-O8t" firstAttribute="leading" secondItem="ati-i1-qmy" secondAttribute="leading" constant="15" id="JKN-vk-TBH"/>
+                            <constraint firstItem="2GB-6J-Smb" firstAttribute="top" secondItem="mip-ZO-z7m" secondAttribute="bottom" constant="20" id="Omk-Eb-hun"/>
+                            <constraint firstItem="2Lg-xk-qmj" firstAttribute="leading" secondItem="ati-i1-qmy" secondAttribute="leading" constant="20" id="RjO-sq-aoj"/>
+                            <constraint firstAttribute="trailing" secondItem="mip-ZO-z7m" secondAttribute="trailing" constant="15" id="TzV-fe-RNX"/>
+                            <constraint firstAttribute="trailing" secondItem="2GB-6J-Smb" secondAttribute="trailing" constant="15" id="YlW-LS-l4a"/>
+                            <constraint firstItem="mip-ZO-z7m" firstAttribute="leading" secondItem="ati-i1-qmy" secondAttribute="leading" constant="15" id="c46-n8-3rS"/>
+                            <constraint firstItem="2HS-uv-uCb" firstAttribute="leading" secondItem="ati-i1-qmy" secondAttribute="leading" constant="15" id="cmd-YQ-jRD"/>
+                            <constraint firstItem="2Lg-xk-qmj" firstAttribute="top" secondItem="ati-i1-qmy" secondAttribute="top" constant="10" id="mqi-eT-8DR"/>
+                            <constraint firstItem="mip-ZO-z7m" firstAttribute="top" secondItem="2HS-uv-uCb" secondAttribute="bottom" constant="20" id="ura-eV-Y5r"/>
+                            <constraint firstAttribute="trailing" secondItem="2HS-uv-uCb" secondAttribute="trailing" constant="15" id="wsW-ye-I9S"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="ati-i1-qmy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2Ck-jD-Qly"/>
+                <constraint firstItem="ati-i1-qmy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="6Cf-zL-AJV"/>
+                <constraint firstAttribute="trailing" secondItem="ati-i1-qmy" secondAttribute="trailing" constant="20" id="R9R-sa-cgA"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ati-i1-qmy" secondAttribute="bottom" id="TRD-Cl-TAZ"/>
+            </constraints>
+            <size key="customSize" width="327" height="440"/>
+            <connections>
+                <outlet property="containerView" destination="ati-i1-qmy" id="tnk-g9-7kJ"/>
+                <outlet property="optionFourLabel" destination="VmO-Xs-csg" id="WXT-jC-FOI"/>
+                <outlet property="optionFourView" destination="itY-wk-O8t" id="A1C-3d-qDZ"/>
+                <outlet property="optionOneLabel" destination="818-dQ-MaO" id="g6l-uV-jtN"/>
+                <outlet property="optionOneView" destination="2HS-uv-uCb" id="ISu-ro-YFQ"/>
+                <outlet property="optionThreeLabel" destination="cyv-mj-HOF" id="m2s-V1-FrZ"/>
+                <outlet property="optionThreeView" destination="2GB-6J-Smb" id="cdy-Mk-9tL"/>
+                <outlet property="optionTwoLabel" destination="dNE-6D-PK3" id="rMZ-az-O06"/>
+                <outlet property="optionTwoView" destination="mip-ZO-z7m" id="X3q-It-lVj"/>
+                <outlet property="questionLabel" destination="2Lg-xk-qmj" id="gHO-5F-bXh"/>
+            </connections>
+            <point key="canvasLocation" x="200.76335877862596" y="51.408450704225352"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Atoll">
+            <color red="0.050980392156862744" green="0.41568627450980394" blue="0.43529411764705883" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Wattle">
+            <color red="0.82352941176470584" green="0.86274509803921573" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

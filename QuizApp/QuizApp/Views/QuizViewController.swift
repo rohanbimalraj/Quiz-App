@@ -113,8 +113,8 @@ extension QuizViewController: QuizViewModelDelegate {
         alertVc.modalPresentationStyle = .overCurrentContext
         alertVc.view.transform = CGAffineTransform(scaleX: 0.00001, y: 0.00001)// For scale effect
         alertVc.score = vm.currentScore
-        alertVc.okButtonClicked = { [weak self] in
-            self?.navigationController?.popViewController(animated: true)
+        alertVc.okButtonClicked = {
+            self.navigationController?.popViewController(animated: true)
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + (UIAccessibility.isVoiceOverRunning ? 1.0 : 0.0)) { //Delay presenting alert till voice over completes
             UIAccessibility.post(notification: .screenChanged, argument: alertVc)

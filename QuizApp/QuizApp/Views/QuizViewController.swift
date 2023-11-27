@@ -177,3 +177,8 @@ extension QuizViewController: UICollectionViewDelegate, UICollectionViewDataSour
         return CGSize(width: questionCollectionView.bounds.width, height: questionCollectionView.bounds.height)
     }
 }
+
+#Preview("QuizViewController") {
+    let vc: QuizViewController = UIStoryboard.main.instantiate()
+    return vc
+}

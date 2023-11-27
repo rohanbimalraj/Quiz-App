@@ -43,3 +43,9 @@ class ScoreAlertViewController: UIViewController {
         }
     }
 }
+
+#Preview("ScoreAlertViewController") {
+    let vc: ScoreAlertViewController = UIStoryboard.main.instantiate()
+    vc.score = 10
+    return vc
+}

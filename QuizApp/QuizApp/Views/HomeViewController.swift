@@ -102,3 +102,7 @@ class HomeViewController: UIViewController {
         self.navigationController?.pushViewController(quizVc, animated: true)
     }
 }
+#Preview("HomeViewController") {
+    let vc: HomeViewController =  UIStoryboard.main.instantiate()
+    return vc
+}

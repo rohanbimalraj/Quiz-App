@@ -22,8 +22,6 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         initialSetUp()
         configureAccessiblity()
-        
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
